@@ -288,152 +288,24 @@ img {
 }
 
 /* === Мобильная адаптация === */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    background: #fafafa;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    color: #222;
+@media (max-width: 600px) {
+  .player-info {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 15px;
   }
 
-  h1 {
-    font-size: 28px;
-    text-align: center;
-    margin: 12px 0 5px;
-    color: #a50044;
+  h2 {
+    font-size: 1.6rem;
   }
 
-  h2, h3 {
-    text-align: center;
-    color: #003366;
-    margin: 8px 0;
+  .player-photo-large {
+    width: 80%;
   }
 
-  #layout {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  /* === Горизонтальная навигация === */
-  #nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; /* равномерное распределение */
-    align-items: center;
-    background-color: #a50044;
-    padding: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  #nav button {
-    flex: 1; /* равная ширина кнопок */
-    padding: 12px 0;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-align: center;
-    gap: 8px;
-  }
-
-  #nav button:hover {
-    background-color: #003366;
-  }
-
-  #content {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  /* === Сетки карточек === */
-  .news-grid,
-  .players-list,
-  .matches-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  /* === Карточки === */
-  .player-card,
-  .match-card,
-  .news-card {
-    background: white;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-
-  /* === Фото адаптивное, одинакового размера === */
-  .player-photo,
-  .coach-photo,
-  .news-card img,
-  img {
-    max-width: 90%; /* адаптивная ширина */
-    height: 180px;  /* фиксированная высота */
-    object-fit: cover;
-    border-radius: 6px;
+  .back-btn {
+    width: 90%;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
   }
-
-  /* === Текст карточек === */
-  .player-info,
-  .news-text {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-top: 6px;
-  }
-
-  /* === Кнопки действий === */
-  .back-btn,
-  .shop-btn {
-    display: block;
-    width: 95%;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #003366;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .back-btn:hover,
-  .shop-btn:hover {
-    background-color: #0055a5;
-  }
-}
-
-/* === Очень маленькие экраны === */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 22px;
-  }
-  #nav button {
-    font-size: 14px;
-    padding: 10px 0;
-  }
-  .player-info,
-  .news-text {
-    font-size: 14px;
-  }
-  .back-btn,
-  .shop-btn {
-    font-size: 14px;
-  }
-}
-img {
-  max-width: 90%;
 }
