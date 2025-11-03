@@ -1,0 +1,404 @@
+/* === Общие стили === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #001845;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Заголовки === */
+h1 {
+  background: linear-gradient(90deg, #a50044, #004d98);
+  color: gold;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  background-color: #0d74db;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffd700;
+  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* === Основная структура === */
+#layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* === Навигация (слева) === */
+#nav {
+  background-color: white;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px 0;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #001845;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-btn:hover {
+  background-color: #a50044;
+  color: white;
+}
+
+/* === Контент справа === */
+#content {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#content h2 {
+  background: none;
+  color: #004d98;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+#content img {
+  display: block;       /* делаем картинку блочной */
+  margin: 20px auto;    /* по бокам auto — горизонтальное центрирование */
+  max-width: 100%;      /* чтобы не выходила за контейнер */
+  border-radius: 10px; 
+  max-width: 300px;
+
+}
+
+/* === Кнопки на главной === */
+.shop-btn {
+  background-color: #004d98;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.shop-btn:hover {
+  background-color: #a50044;
+  transform: translateY(-2px);
+}
+
+/* === Команда === */
+.players-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 30px;
+}
+
+.player-card {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+.player-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 2px solid #ffd700;
+}
+
+.player-photo-large {
+  border: 3px solid #ffd700;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* === Тренеры === */
+.coaches-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coach-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 15px;
+  width: 180px;
+  transition: 0.3s;
+}
+
+.coach-card:hover {
+  box-shadow: 0 0 15px #ffd700;
+  transform: scale(1.05);
+}
+
+.coach-photo {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+}
+
+/* === Новости === */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+/* === Матчи === */
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.match-card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.match-card:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ffd700;
+}
+
+/* === Кнопка назад === */
+.back-btn {
+  background: #a50044;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin: 10px 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #ffd700;
+  color: #0a1630;
+}
+
+/* === Фото игрока на странице деталей === */
+.player-photo-large {
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+/* === Скролл === */
+#content::-webkit-scrollbar {
+  width: 8px;
+}
+#content::-webkit-scrollbar-thumb {
+  background-color: #a50044;
+  border-radius: 4px;
+}
+#content::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+h3,h4,p,li {
+  text-align: center;
+}
+a {
+  color: red;
+}
+#google_translate_element {
+  display: inline-block;      /* чтобы не растягивался на всю ширину */
+  margin: 10px auto;          /* центрировать */
+  border: none;               /* убрать рамку */
+  text-align: center;
+  color: white;
+}
+img {
+  max-width: 700px;
+  height: auto;
+}
+#news img {
+  max-width: 700px;
+  height: auto;
+}
+.news-img {
+  width: 400px;
+  height: auto,
+}
+.news-img {
+  width: 450px;
+  height: auto;
+}
+/* === Общие стили для мобильных устройств === */
+@media (max-width: 768px) {
+  /* Уменьшаем отступы и шрифты */
+  body {
+    font-size: 16px;
+    padding: 5px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  /* Навигация слева превращается в верхнюю панель */
+  #layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: #a50044; /* бордовый клубный цвет */
+    padding: 8px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #nav button {
+    flex: 1 1 40%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #nav button:hover {
+    background-color: #0055a5;
+  }
+
+  /* Контент по центру, без лишних отступов */
+  #content {
+    padding: 10px;
+  }
+
+  /* Новости и карточки игроков — сетка по одной колонке */
+  .news-grid,
+  .players-list,
+  .matches-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Карточки — адаптивные */
+  .player-card,
+  .match-card,
+  .news-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Фото игроков и новости */
+  .player-photo,
+  .coach-photo,
+  .news-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Текст новости — чуть меньше */
+  .player-info, .news-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Кнопка назад и кнопки действий */
+  .back-btn,
+  .shop-btn {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+  }
+}
+
+/* === Ещё компактнее для очень маленьких экранов === */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  #nav button {
+    flex: 1 1 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .player-card p {
+    font-size: 14px;
+  }
+}
