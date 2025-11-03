@@ -340,6 +340,7 @@ img {
     cursor: pointer;
     transition: background-color 0.2s;
     text-align: center;
+    gap: 8px;
   }
 
   #nav button:hover {
