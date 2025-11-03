@@ -318,32 +318,32 @@ img {
     gap: 10px;
   }
 
-  /* === Вертикальная навигация === */
+  /* === Горизонтальная навигация === */
   #nav {
     display: flex;
-    flex-direction: column; /* вертикально */
-    gap: 6px;
+    flex-direction: row;
+    justify-content: space-around; /* равномерное распределение */
+    align-items: center;
     background-color: #a50044;
-    padding: 10px;
+    padding: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 0 0 8px 8px;
   }
 
   #nav button {
-    width: 100%; /* растягиваются по ширине */
+    flex: 1; /* равная ширина кнопок */
     padding: 12px 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
-    background-color: #003366;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     transition: background-color 0.2s;
-    border-radius: 6px;
+    text-align: center;
   }
 
   #nav button:hover {
-    background-color: #0055a5;
+    background-color: #003366;
   }
 
   #content {
@@ -377,5 +377,62 @@ img {
   .coach-photo,
   .news-card img,
   img {
-    max-width: 90%;}}  /* теперь картинки не выходят за предел*
-  
+    max-width: 90%; /* адаптивная ширина */
+    height: 180px;  /* фиксированная высота */
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* === Текст карточек === */
+  .player-info,
+  .news-text {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 6px;
+  }
+
+  /* === Кнопки действий === */
+  .back-btn,
+  .shop-btn {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #003366;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .back-btn:hover,
+  .shop-btn:hover {
+    background-color: #0055a5;
+  }
+}
+
+/* === Очень маленькие экраны === */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  #nav button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .player-info,
+  .news-text {
+    font-size: 14px;
+  }
+  .back-btn,
+  .shop-btn {
+    font-size: 14px;
+  }
+}
+img {
+  max-width: 90%;
+}
