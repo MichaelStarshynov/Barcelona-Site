@@ -286,6 +286,7 @@ img {
   width: 450px;
   height: auto;
 }
+
 /* === Мобильная адаптация === */
 @media (max-width: 768px) {
   body {
@@ -293,8 +294,8 @@ img {
     margin: 0;
     padding: 0;
     background: #fafafa;
-    color: #222;
     font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #222;
   }
 
   h1 {
@@ -314,13 +315,15 @@ img {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 8px;
+    gap: 10px;
   }
 
-  /* Навигация — прямой верхний бар */
+  /* === Горизонтальная навигация === */
   #nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around; /* кнопки равномерно распределены */
+    align-items: center;
     background-color: #a50044;
     padding: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -328,6 +331,7 @@ img {
 
   #nav button {
     flex: 1;
+    text-align: center;
     padding: 12px 0;
     font-size: 15px;
     font-weight: bold;
@@ -348,16 +352,16 @@ img {
     box-sizing: border-box;
   }
 
-  /* Сетки карточек */
+  /* === Сетки карточек === */
   .news-grid,
   .players-list,
   .matches-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* по одной колонке на мобилке */
     gap: 12px;
   }
 
-  /* Карточки */
+  /* === Карточки === */
   .player-card,
   .match-card,
   .news-card {
@@ -368,16 +372,17 @@ img {
     text-align: center;
   }
 
-  /* Фото — теперь адаптивные и пропорциональные */
+  /* === Фото фиксированного размера === */
   .player-photo,
   .coach-photo,
   .news-card img {
     width: 100%;
-    max-height: 180px; /* ограничение высоты */
+    height: 180px; /* фиксированная высота */
     object-fit: cover;
     border-radius: 6px;
   }
 
+  /* === Текст карточек === */
   .player-info,
   .news-text {
     font-size: 15px;
@@ -385,7 +390,7 @@ img {
     margin-top: 6px;
   }
 
-  /* Кнопки действий */
+  /* === Кнопки действий === */
   .back-btn,
   .shop-btn {
     display: block;
