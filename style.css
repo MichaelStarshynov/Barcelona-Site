@@ -297,65 +297,54 @@ img {
     font-family: 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Заголовки */
   h1 {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
-    margin: 15px 0 5px;
-    color: #a50044; /* Бордовый */
+    margin: 12px 0 5px;
+    color: #a50044;
   }
 
   h2, h3 {
     text-align: center;
     color: #003366;
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
-  /* Общий макет — вертикальная колонка */
   #layout {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
+    align-items: stretch;
+    gap: 8px;
   }
 
-  /* Навигация сверху */
+  /* Навигация — прямой верхний бар */
   #nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    background: linear-gradient(90deg, #a50044, #003366);
-    padding: 10px 8px;
-    border-radius: 0 0 16px 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    background-color: #a50044;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   #nav button {
-    flex: 1 1 45%;
-    max-width: 160px;
-    padding: 10px 12px;
+    flex: 1;
+    padding: 12px 0;
     font-size: 15px;
+    font-weight: bold;
     border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: transparent;
     color: white;
-    font-weight: 600;
-    backdrop-filter: blur(5px);
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: background-color 0.2s;
   }
 
   #nav button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    background-color: #003366;
   }
 
-  /* Контент */
   #content {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     box-sizing: border-box;
   }
 
@@ -365,7 +354,7 @@ img {
   .matches-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 12px;
   }
 
   /* Карточки */
@@ -373,53 +362,43 @@ img {
   .match-card,
   .news-card {
     background: white;
-    border-radius: 14px;
-    padding: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .player-card:hover,
-  .match-card:hover,
-  .news-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  }
-
-  /* Фото */
+  /* Фото — теперь адаптивные и пропорциональные */
   .player-photo,
   .coach-photo,
   .news-card img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-height: 180px; /* ограничение высоты */
     object-fit: cover;
+    border-radius: 6px;
   }
 
-  /* Текст */
   .player-info,
   .news-text {
-    font-size: 15.5px;
-    line-height: 1.6;
-    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 6px;
   }
 
   /* Кнопки действий */
   .back-btn,
   .shop-btn {
     display: block;
-    width: 90%;
-    margin: 12px auto 0;
+    width: 95%;
+    margin: 10px auto;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: #003366;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.25s ease;
   }
 
   .back-btn:hover,
@@ -428,25 +407,21 @@ img {
   }
 }
 
-/* === Для очень маленьких экранов (до 480px) === */
+/* === Очень маленькие экраны === */
 @media (max-width: 480px) {
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
-
   #nav button {
-    flex: 1 1 100%;
     font-size: 14px;
-    padding: 9px;
+    padding: 10px 0;
   }
-
   .player-info,
   .news-text {
     font-size: 14px;
   }
-
   .back-btn,
   .shop-btn {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
