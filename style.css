@@ -294,7 +294,9 @@ img {
     font-size: 0.95rem;
     padding: 15px;
   }
-
+  img {
+    max-width: 90%;
+  }
   h2 {
     font-size: 1.6rem;
   }
