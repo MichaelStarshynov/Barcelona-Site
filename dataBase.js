@@ -264,7 +264,7 @@ window.team = [
       opponent: "Atletico Madrid",
       time: "21:00",
       score: "",
-      place: "Olímpic Lluís Companys, Madrid",
+      place: "Olímpic Lluís Companys, Barcelona",
       competition: "La Liga",
     }
   ]
