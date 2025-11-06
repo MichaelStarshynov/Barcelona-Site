@@ -220,19 +220,10 @@ window.team = [
   ]
   window.matches = [
     {
-      date: "2-11-25",
-      opponent: "Elche",
-      time: "18:30",
-      score: "3-1",
-      place: "Olympic Stadium, Barcelona",
-      competition: "La Liga",
-
-    },
-    {
       date: "5-11-25",
       opponent: "Club Brugge",
       time: "21:00",
-      score: "",
+      score: "3-3",
       place: "Olympic Stadium, Barcelona",
       competition: "UCL",
     },
@@ -268,8 +259,30 @@ window.team = [
        place: "Olympic Stadium, Barcelona",
        competition:"La Liga",
     },
+    {
+      date: "2-12-25",
+      opponent: "Atletico Madrid",
+      time: "21:00",
+      score: "",
+      place: "Olímpic Lluís Companys, Madrid",
+      competition: "La Liga",
+    }
   ]
   window.news = [
+    {
+      datum: "06-11-25",
+      id: 3,
+      title: "Club Brugge 3-3 Barcelona",
+      image: "https://image.demorgen.be/264798437/width/2480/barcelonaspeler-lamine-yamal-aan-de-bal-tegen-joaquin-seys-van",
+      text: '<h3>Barcelona takes draw from Brugge</h3><br><h4>First Half</h4><p>In the 6 minute of first yhalf the score was opened by goal from N. Tresoldi for Brugge. <br>Two minutes after Fermin Lopez makes assist on Ferran Torres, who made the score 1-1.<br>In the 17 minute C.Forb scores and make Brugge lead the game. First half ended 2-1 for Brugge.</p><br><h4>Second half</h4><p>The second half was more intresting than first half. In the 61 minute Lamine Yamal makes a goal, after Fermin Lopez gives him the ball<br> Right 2 minuets after C.Forbs makes a goal in the goal of Barcelona. <br> In the 77 minute Lamine Yamal shoots at the goal and scores, but the goal was given as the own goal of C. Tzolis. In the 90+2 Vermant makes a goal, but it was dissalowed. The second half ends as draw.</p><br><img src="https://www.fcbarcelona.com/photo-resources/2025/11/05/65b9c75c-b3de-47a1-a5f2-f7819c2ce75a/_MGA0129.jpg?width=1200&height=750" class="news-img"><p>The player of the match is Lamine Yamal, who scored 2 goals.</p><br><strong><p>Highlights of the match: </p></strong><ul><li>⚽ 6 minute - Nicolo Tresoldi (Brugge)</li><li>⚽ 8 minute - Ferran Torres (Barcelona)</li><li>⚽ 17 minute - Carlos Forbs (Brugge)</li><li>⚽ 61 minute - Lamine Yamal (Barcelona)</li><li>⚽63 minute - Carlos Forbs (Brugge)</li><li>⚽ 77 minute - Christos Tzolis (Barcelona, own goal)</li><li>❌⚽ 90+2 minute - Vermant (Brugge, goal dissalowed)</li><li></li></ul><br><p><a href="https://youtu.be/t7nmO7AE2nE?si=yKxRPP9KVDT-WjXH">Video Highlights</a> of the match Barcelona - Brugge</p>',
+    }, 
+    {
+      datum: "06-11-25",
+      id: 4,
+      title: "Hansi Flick: 'We will get better'",
+      image: "https://www.fcbarcelona.com/photo-resources/2025/11/05/eb213fb0-4207-4a80-aa6a-c2af44486784/_MGA0107.jpg?width=1200&height=750",
+      text: '<h3>The German coach says his side will not change their defensive tactics and that they need to be positive</h3><br><p>"3-3 is not the best result, but Club Brugge played very, very well," explained Hansi Flick after the draw in Bruges. The German coach remained committed to his defensive plan despite conceding three goals: "We will continue to maintain our high defensive line and work on improving it," he added in the press room at the Jan Breydel Stadium.</p><img src="https://vodacomsoccer.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmobi_express%2Fimages%2F2025%2F11%2F1762414425791%2F16%2Ffc-barcelona-head-coach-hansi-flick-attends-a-press-conference-5-november-202516.jpeg&w=1920&q=75" class="news-img"><br><p>"Last season, we wouldn’t have conceded that first goal. We don’t have the same confidence when playing the offside trap. We won’t change our way of defending," Flick stressed after FC Barcelona conceded three goals in Bruges. But with each question, the German stood firm in his philosophy and maintaining a defensive approach that worked last season: "In midfield, we didn’t press well, and it was difficult to defend against their players with pace. We need to analyse the draw and see where we can improve."</p><br><p>"We have to keep working. We are not at our best, but we must stay positive. We’ll be able to get back to our best level when we have the likes Raphinha, Pedri, and Joan Garcia back," insisted the coach, focused on sticking to his game plan. "We are Barça and we want to be intense with and without the ball," added Hansi Flick, who was critical but confident in his ideas and pleased with the team’s reaction after conceding. </p><br><p>Flick is already looking ahead: "We have the opportunity to do better against Celta."</p>',
+    },
     {
       datum: "03-10-25",
       id: 1,
@@ -293,5 +306,5 @@ window.team = [
        <br><p>That involves progressing as a group and individually, and when asked about specific names, he said that they can take another step, such as Fermín: "He can still give more. He is a good player for us, he is very active. He is always there when creating chances and scoring goals". The German coach was also happy with the work done by Marcus Rashford and Frenkie de Jong – two "important" parts of the team.</p>
        <br><p>After this win, Hansi Flick is already looking forward to the upcoming challenges before the next international break in November. "We want to win in the Champions League and then in Vigo to take more steps forward. We have to be positive. I am happy with the victory against Elche", confessed a contented Flick, albeit always with the mindset of developing with each game.</p>
       `, 
-    }
+    },
   ]

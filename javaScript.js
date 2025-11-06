@@ -127,7 +127,7 @@ const pages = {
   Team: { title: `Команда` },
   Matches: { 
     title: `Матчі`, 
-    text:  `<p>Place in La Liga: 2 place</p><p>Place in UCL: 9 place</p><p>Place in  Copa Del Rey: 1/32</p>`
+    text:  `<p>Place in La Liga: 2 place</p><p>Place in UCL: 11 place</p><p>Place in  Copa Del Rey: 1/32</p>`
 
   },
   Tickets: {
